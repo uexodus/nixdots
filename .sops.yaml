@@ -1,0 +1,9 @@
+keys:
+  - &primary age14prhxw23ra97qdtnesv2kgxnq0dlzxza8x3nyn5233vzevjls5aqxst3sn
+  - &desktop age1avk5xv86mxcam7dga4d5w4d705fekwdk7eeuwlrvep5aetlzf57s7u4gk3
+creation_rules:
+  - path_regex: secrets/shared.yaml$
+    key_groups:
+    - age:
+      - *primary
+      - *desktop
